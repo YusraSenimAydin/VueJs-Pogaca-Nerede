@@ -47,7 +47,7 @@ export default {
 }
 
 .container button:hover{
-  background-color: lightgreen;
+  background-color: darkgreen;
   color: #fff;
   transition:all .5s;
 }
