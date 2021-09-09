@@ -1,6 +1,5 @@
 <template>
-  <div class="game-area">
-    <p>{{defaultCardElement}}</p>
+  <div class="game-area">   
     <h1 class="title">Poğaça <span>Nerede</span> <strong>?</strong></h1>
       <h4 class="description">Açık kartlardan birini seçtikten sonra,kapalı olan kartlara tıklayınız.</h4>
 
@@ -25,7 +24,7 @@
       </transition>
     </div>
   </div>
-  
+
 </template>
 
 <script>
@@ -59,7 +58,7 @@ export default {
         alert("Lütfen kart seçiniz...");
       }
       else{
-        this.dynamicComponent=defaultCardElement.component;
+        this.dynamicComponent=defaultCardElement.component; //kartı açma işlemi
         setTimeout(()=>{
           if(defaultCardElement.id===this.selectedCard){
             this.$emit("isCorrectEvent","appCelebrate");

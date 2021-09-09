@@ -1,8 +1,8 @@
-<template>
-
+<template>  
   <transition-group name="slide-container" mode="out-in">
+      /*  sayfaların değişmesi işlemi için isCoorectEvent a $event parametresi gönderiyoruz  */
     <component
-        key="mainComponenet"
+        key="mainComponenet"         
         @isCorrectEvent="activeComponent=$event"
         :is="activeComponent"></component>
     <canvas id="canvas" v-show="activeComponent=='appCelebrate'"></canvas>
